@@ -1,0 +1,162 @@
+
+<div id="altaMaquinaria">
+    <form role="form" name="formAltaMaquinaria" id="formAltaMaquinaria" class="col-sm-12">
+        <div class="form-group">
+            <label for="idMaquinaria">ID:</label>
+            <input type="text" class="form-control" id="idMaquinaria" name="idMaquinaria" placeholder="Cargando id" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="nombreMaquinaria">Nombre:</label>
+            <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre">
+        </div>
+        <div class="form-group">
+            <label for="marcaMaquinaria">Marca:</label>
+            <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca">
+        </div>
+        <div class="form-group">
+            <label for="precioMaquinaria">Precio Alquiler:</label>
+            <input type="number" max=99999.99 min=0 step=100.00 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler">
+        </div>
+        <div class="form-group">
+            <label>Tipo Maquinaria:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="AltaTipoElectrica" value="electrica"> El&eacute;ctrica
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="AltaTipoCombustible" value="combustible"> Combustible
+                </label>
+            </div>
+        </div>
+        <div id="capaAltaTipoElectrica" class="none">
+            <div class="form-group">
+                <label for="bateriaElectrica">Bater&iacute;as:</label>
+                <input type="number" min="1" max="10" pattern="\d*" maxlength="2" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce n&uacute;mero de bater&iacute;as">
+            </div>
+            <div class="form-group">
+                <label for="voltajeElectrica">Voltaje:</label>
+                <input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de bater&iacute;a">
+            </div>
+        </div>
+        <div id="capaAltaTipoCombustible" class="none">
+            <div class="form-group">
+                <label for="tipoCombustible">Tipo Combustible:</label>
+                <input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible">
+
+            </div>
+            <div class="form-group">
+                <label for="capacidadCombustible">Capacidad:</label>
+                <input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="bajaMaquinaria">
+    <form role="form" name="formBajaMaquinaria" id="formBajaMaquinaria" class="col-sm-12">
+        <div class="form-group">
+            <label for="maquinariaBaja">Maquinarias disponibles:</label>
+            <select class="form-control" id="maquinariaBaja">
+                <option>Esperando datos de maquinarias</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="nombreMaquinaria">Nombre:</label>
+            <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="marcaMaquinaria">Marca:</label>
+            <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="precioMaquinaria">Precio Alquiler:</label>
+            <input type="number"  max=99999.99 min=0 step=100.00 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label>Tipo Maquinaria:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="BajaTipoElectrica" value="electrica" disabled="disabled"> El&eacute;ctrica
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="BajaTipoCombustible" value="combustible" disabled="disabled"> Combustible
+                </label>
+            </div>
+        </div>
+        <div id="capaBajaTipoElectrica" class="none">
+            <div class="form-group">
+                <label for="bateriaElectrica">Bater&iacute;as:</label>
+                <input type="number" min="1" max="10" pattern="\d*" maxlength="2" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce n&uacute;mero de bater&iacute;as" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="voltajeElectrica">Voltaje:</label>
+                <input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de bater&iacute;a" disabled="disabled">
+            </div>
+        </div>
+        <div id="capaBajaTipoCombustible" class="none">
+            <div class="form-group">
+                <label for="tipoCombustible">Tipo Combustible:</label>
+                <input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible" disabled="disabled">
+
+            </div>
+            <div class="form-group">
+                <label for="capacidadCombustible">Capacidad:</label>
+                <input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad" disabled="disabled">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="modificaMaquinaria">
+    <form role="form" name="formModificaMaquinaria" id="formModificaMaquinaria" class="col-sm-12">
+        <div class="form-group">
+            <label for="maquinariaModifica">Maquinaria</label>
+            <select class="form-control" id="maquinariaModifica">
+                <option>Esperando datos de maquinarias</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="nombreMaquinaria">Nombre:</label>
+            <input type="text" class="form-control" id="nombreMaquinaria" name="nombreMaquinaria" placeholder="Introduce nombre" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="marcaMaquinaria">Marca:</label>
+            <input type="text" class="form-control" id="marcaMaquinaria" name="marcaMaquinaria" placeholder="Introduce marca" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="precioMaquinaria">Precio Alquiler:</label>
+            <input type="number"  max=99999.99 min=0 step=100.00 class="form-control" id="precioMaquinaria" name="precioMaquinaria" placeholder="Introduce precio alquiler" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label>Tipo Maquinaria:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="ModificaTipoElectrica" value="electrica" disabled="disabled"> El&eacute;ctrica
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="rbtTipoMaquinaria" id="ModificaTipoCombustible" value="combustible" disabled="disabled"> Combustible
+                </label>
+            </div>
+        </div>
+        <div id="capaModificaTipoElectrica" class="none">
+            <div class="form-group">
+                <label for="bateriaElectrica">Bater&iacute;as:</label>
+                <input type="number" min="1" max="9" pattern="\d*" maxlength="1" class="form-control" id="bateriaElectrica" name="bateriaElectrica" placeholder="Introduce n&uacute;mero de bater&iacute;as" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="voltajeElectrica">Voltaje:</label>
+                <input type="number" min="0.00" max="350.00" step=3.2 class="form-control" id="voltajeElectrica" name="voltajeElectrica" placeholder="Introduce voltaje de bater&iacute;a" disabled="disabled">
+            </div>
+        </div>
+        <div id="capaModificaTipoCombustible" class="none">
+            <div class="form-group">
+                <label for="tipoCombustible">Tipo Combustible:</label>
+                <input type="text" class="form-control" id="tipoCombustible" name="tipoCombustible" placeholder="Introduce tipo de combustible" disabled="disabled">
+            </div>
+            <div class="form-group">
+                <label for="capacidadCombustible">Capacidad:</label>
+                <input type="number" min="0" max="400" step="25" class="form-control" id="capacidadCombustible" name="capacidadCombustible" placeholder="Introduce litros de capacidad" disabled="disabled">
+            </div>
+        </div>
+    </form>
+</div>

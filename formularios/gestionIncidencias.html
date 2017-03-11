@@ -1,0 +1,117 @@
+<div id="altaIncidencia">
+    <form role="form" name="formAltaIncidencia" id="formAltaIncidencia" class="col-sm-12">
+        <div class="form-group">
+            <label for="idIncidencia">ID:</label>
+            <input type="text" class="form-control" id="idIncidencia" name="idIncidencia" placeholder="Introduce ID" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="maquinariaIncidencia">Maquinaria Afectada:</label>
+            <select class="form-control" id="maquinariaIncidencia" name="maquinariaIncidencia">
+                <option>Selecciona Maquinaria</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tituloIncidencia">Motivo:</label>
+            <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce titulo">
+        </div>
+        <div class="form-group">
+            <label for="descripcionIncidencia">Descripcion:</label>
+            <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Estado:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaActiva" value="activa" checked="checked"> Activa
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fechaIncidencia">Fecha:</label>
+            <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+        </div>
+    </form>
+</div>
+
+<div id="bajaIncidencia">
+    <form role="form" name="formBajaIncidencia" id="formBajaIncidencia" class="col-sm-12">
+        <div class="form-group">
+            <label for="incidenciaBaja">Incidencia:</label>
+            <select class="form-control" id="incidenciaBaja" name="incidenciaBaja" >
+                <option>Selecciona Incidencia para anular</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="maquinariaIncidencia">Maquinaria Afectada:</label>
+            <select class="form-control" id="maquinariaIncidencia" name="maquinariaIncidencia" disabled="disabled">
+                <option>Selecciona Maquinaria</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tituloIncidencia">Motivo:</label>
+            <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce titulo" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="descripcionIncidencia">Descripcion:</label>
+            <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2" disabled="disabled"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Estado:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaActiva" value="activa" checked="checked" disabled="disabled"> Activa
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fechaIncidencia">Fecha:</label>
+            <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+        </div>
+    </form>
+</div>
+
+<div id="modificaIncidencia">
+    <form role="form" name="formModificaIncidencia" id="formModificaIncidencia" class="col-sm-12">
+        <div class="form-group">
+            <label for="incidenciaModifica">Incidencias:</label>
+            <select class="form-control" id="incidenciaModifica">
+                <option>Selecciona Incidencia para modificar</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="maquinariaIncidencia">Maquinaria Afectada:</label>
+            <select class="form-control" id="maquinariaIncidencia" name="maquinariaIncidencia" disabled="disabled">
+                <option>Selecciona Maquinaria</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="tituloIncidencia">Motivo:</label>
+            <input type="text" class="form-control" id="tituloIncidencia" name="tituloIncidencia" placeholder="Introduce titulo" disabled="disabled">
+        </div>
+        <div class="form-group">
+            <label for="descripcionIncidencia">Descripcion:</label>
+            <textarea class="form-control" id="descripcionIncidencia" name="descripcionIncidencia" placeholder="Escriba el motivo de la incidencia con detalles" rows="2" disabled="disabled" disabled="disabled"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Estado:</label><br>
+            <div class="btn-group">
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaActiva" value="activa" disabled="disabled"> Activa
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="estado" id="incidenciaAnulada" value="anulada" disabled="disabled"> Anulada
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fechaIncidencia">Fecha:</label>
+            <input type="text" class="form-control" id="fechaIncidencia" name="fechaIncidencia" placeholder="Introduce fecha" disabled="disabled">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Agromachine</title>
+    <!-- meta -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="fontawesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="jquery/jquery-1.11.0.min.js"  type="text/javascript"></script>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+    <!-- JQuery UI -->
+    <script language="JavaScript" type="text/javascript" src="jquery-ui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+
+    <!-- Estilo personal -->
+    <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+    <link rel="icon" href="favicon.ico" type="image/gif" sizes="16x16">
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    
+    <!-- Scripts -->
+
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/funcionesValidacion.js"></script>
+    <script type="text/javascript" src="js/funcionesFormulario.js"></script>
+    <script type="text/javascript" src="js/funcionesSelect.js"></script>
+    <script type="text/javascript" src="js/funcionesTabla.js"></script>
+
+
+</head>
+<body>
+
+<div id="logo" class="col-sm-12">
+    <img  src="images/logo.jpg" class="img-responsive"/>
+</div>
+<div id="mostrar" class="container">
+	<div id="gestion" class="col-sm-10 col-xs-12">
+	<div class="row" style="margin:0;padding:0;">
+	    <div id="gestionClientes" class="col-sm-4 col-xs-12 text-center">
+	    	<i class="fa fa-user col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Clientes</span>
+	    	<div class="capaBotones">
+	    	<button type="button" id="mnuAltaCliente" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" id="mnuBajaCliente" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" id="mnuModificaCliente" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" id="mnuListarCliente" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+    		</div>
+	    </div>
+	    <div id="gestionMaquinarias" class="col-sm-4 col-xs-12 text-center">
+	    	<i class="fa fa-cog col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Maquinarias</span>
+	    	<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionEmpleados" class="col-sm-4 col-xs-12 text-center">
+	    	<i class="fa fa-address-book-o col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Empleados</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	</div>
+	    <div id="gestionAlquileres" class="col-sm-4 col-xs-12 text-center">
+	    	<i class="fa fa-key col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Alquileres</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionIncidencias" class="col-sm-4 col-xs-12 text-center">
+	    	<i class="fa fa-legal col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Incidencias</span>
+			<div class="capaBotones">
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-2 col-sm-2 col-xs-offset-1 col-xs-2">
+	    		<span class="glyphicon glyphicon-plus-sign"></span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-remove-sign"></span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-edit"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-list-alt"></span>
+    		</button>
+			</div>
+	    </div>
+	    <div id="gestionDocumentos" class="col-sm-4 col-xs-12 text-center">
+    		<i class="fa fa-file-text-o col-sm-12 col-xs-2"></i>
+	    	<span class="tituloGestion col-sm-12 col-xs-10">Documentos</span>
+			<div class="capaBotones"> <!--col-sm-12 col-xs-10" -->
+	    	<button type="button" class="btn btn-success btn-xs col-sm-offset-1 col-sm-2 col-xs-2">
+	    		<span>GIT</span>
+	    	</button>
+	    	<button type="button" class="btn btn-danger btn-xs col-sm-2 col-xs-2">
+	    		<span>E/R</span>
+    		</button>
+	    	<button type="button" class="btn btn-primary btn-xs col-sm-2 col-xs-2">
+	    		<span>DOC</span>
+    		</button>
+	    	<button type="button" class="btn btn-info btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-globe"></span>
+    		</button>
+	    	<button type="button" class="btn btn-warning btn-xs col-sm-2 col-xs-2">
+	    		<span class="glyphicon glyphicon-download"></span>
+    		</button>
+			</div>
+	    </div>
+    </div>
+</div>
+
+    <div id="formularios">
+
+    </div>
+
+
+    
+	<div id="doc">
+		<div class="row text-center">
+        	<div class=" col-sm-12 col-offset-xs-2 col-xs-8">
+            	<iframe id="documento" style="width:100%;height:500px;"></iframe>
+			</div>
+		</div>
+    </div>
+	<div id="uml">
+        <form role="form" class="col-sm-12 col-offset-xs-2 col-xs-8">
+    		<img style="margin:0 auto;" src="Documentos/agromachine-er.png" class="img-responsive" />
+            
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
