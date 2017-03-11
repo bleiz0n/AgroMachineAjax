@@ -68,7 +68,7 @@ function cargarSelectCliente(select,cadena){
                 options[i]=clientes[i].dni +" - " +clientes[i].nombre+" " +clientes[i].apellidos +" - " +clientes[i].provincia +" - " +clientes[i].telefono;
             }
             rellenamosSelect(select,values,options); //Rellenamos select
-            if($('#formBajaCliente').length > 0 || $('#formModificaCliente').length > 0 ) {
+            if($('#formBajaCliente').length > 0 || $('#formModificaCliente').length > 0 || $('#formAltaAlquiler').length > 0 ) {
                 select.removeAttribute("disabled");
             }
         }
@@ -244,7 +244,7 @@ function cargarSelectEmpleado(select,cadena){
                 options[i]=empleados[i].dni +" - " +empleados[i].nombre+" " +empleados[i].apellidos +" - " +empleados[i].rol +" - " +empleados[i].provincia +" - " +empleados[i].telefono;
             }
             rellenamosSelect(select,values,options); //Rellenamos select
-            if($('#formBajaEmpleado').length > 0 || $('#formModificaEmpleado').length > 0 ) {
+            if($('#formBajaEmpleado').length > 0 || $('#formModificaEmpleado').length > 0 || $('#formAltaAlquiler').length > 0 ) {
                 select.removeAttribute("disabled");
             }
         }
@@ -312,6 +312,9 @@ function cargarSelectAlquiler(select,cadena){
                 options[i]=alquileres[i].id +" - E: " +alquileres[i].empleado+" - C: " +alquileres[i].dni +" " +alquileres[i].apellidos +", " +alquileres[i].nombre +" - M: " +alquileres[i].idM +" " +alquileres[i].nombreM +", " +alquileres[i].marca +" - Inicio: "+alquileres[i].fecha_inicio;
             }
             rellenamosSelect(select,values,options); //Rellenamos select
+            if($('#formBajaAlquiler').length > 0 || $('#formModificaAlquiler').length > 0 ) {
+                select.removeAttribute("disabled");
+            }
         }
     }
     peticion.onerror = function (e) {console.error(peticion.statusText);}
