@@ -15,6 +15,14 @@ function creaDialogoModificaAlquiler(){
             click: procesoModificaAlquiler
         }]
     });
+    $("#fechaFinAlquiler").datepicker({
+        dateFormat: 'dd/mm/yy',
+        minDate: '-3d',
+        maxDate: '+60d',
+        onClose: function(dateText) {
+
+        }
+    });
 
     var selectAlquiler = formModificaAlquiler.alquilerModifica;
     var selectEmpleado = formModificaAlquiler.empleadoAlquiler;
